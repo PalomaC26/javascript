@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-JavaScript</title>
+
+    <style>
+        body{
+          background-color:blue;
+          color: yellowgreen;
+          font-size: normal 18px Arial;
+          text-align: center;
+        }
+  
+      </style>
+
+</head>
+<body>
+    <h1>Entendendo DOM</h1>
+    <p>Postando aqui os resultaos</p>
+    <p>Aprendendo a usar o <strong>Dom</strong> em JavaScript</p>
+    <div id="msg" >Clique aqui !!!</div>
+
+    <script>
+       //window.document.write("Veja o poder do DOM") // Exibe um texto no HTML
+       //window.document.write(window.document.charset) // mostra o mapa de caracteres
+       //window.document.write(window.document.URL) // Exibe o endereço do site
+      //var p1 = window.document.getElementByTagName('p')[1]//
+       //window.document.write('Esse é o texto:' + p1.innerHTML)
+       //var corpo = window.document.body
+       //p1.style.background = 'black'
+        //d.style.color = "black"
+        //d.innerText = "Estou aguardando"
+        var d = window.document.querySelector("div#msg")
+        d.style.backgroundcolor = "yellow"
+    </script>
+</body>
+</html>
