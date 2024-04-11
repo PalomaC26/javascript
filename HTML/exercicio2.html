@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Nacionalidade</title>
+<style>
+    body{
+        font: normal 12pt Arial;
+        background-color: rgb(104, 104, 185);
+    }
+    input{
+        font: normal 10pt Arial;
+    }
+    .resultado{
+        margin-top: 20pt;
+    }
+</style>
+
+
+
+
+</head>
+<body>
+    <h1>Verificação de Nacionalidade</h1>
+    <input type="text" id="país">
+    <br>
+    <input type="button" value="Verificar" onclick="VerificarNacionalidade()">
+    <br>
+    <div id="res" class="resultado"> Resultado</div>
+
+<script>
+
+function VerificarNacionalidade(){
+    var país = document.querySelector('país').value
+    var mnsagem
+
+    if(país.toLowerCase() === 'brasil') {
+        mensagem = 'Voce é Brasileiro' ;
+     } else{
+        mensagem = "Voce é estrangeiro";
+     }
+     document.getElementById('res').innerHTML = mensagem;
+}
+
+</script>
+
+
+</body>
+</html>
