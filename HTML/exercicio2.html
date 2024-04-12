@@ -32,13 +32,14 @@
 <script>
 
 function VerificarNacionalidade(){
-    var país = document.querySelector('país').value
+    var país = document.querySelector('input#país').value
     var mnsagem
 
-    if(país.toLowerCase() === 'brasil') {
-        mensagem = 'Voce é Brasileiro' ;
-     } else{
-        mensagem = "Voce é estrangeiro";
+    if(país.toLowerCase() === 'brasil'){
+        mensagem = 'Voce é Brasileiro' 
+     }
+    else{
+        mensagem = "Voce é estrangeiro"
      }
      document.getElementById('res').innerHTML = mensagem;
 }
